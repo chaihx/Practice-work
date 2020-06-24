@@ -1,0 +1,170 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{F8754CC6-30DB-4BA3-8A98-609F7FE96CAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Family_Tree</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Family_Tree\Addbody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Family_Tree\Addbody.Designer.cs">
+      <DependentUpon>Addbody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Family_Tree\Affirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Family_Tree\Affirm.Designer.cs">
+      <DependentUpon>Affirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Family_Tree\Change_Image.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Family_Tree\Change_Image.Designer.cs">
+      <DependentUpon>Change_Image.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Family_Tree\body_Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Family_Tree\body_Manage.Designer.cs">
+      <DependentUpon>body_Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Family_Tree\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Family_Tree\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Family_Tree\Logout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Family_Tree\Logout.Designer.cs">
+      <DependentUpon>Logout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Family_Tree\Mdfct_Acct_Username.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Family_Tree\Mdfct_Acct_Username.Designer.cs">
+      <DependentUpon>Mdfct_Acct_Username.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Family_Tree\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Family_Tree\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Family_Tree\Modification_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Family_Tree\Modification_Password.Designer.cs">
+      <DependentUpon>Modification_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Family_Tree\Program.cs" />
+    <Compile Include="Family_Tree\Regist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Family_Tree\Regist.Designer.cs">
+      <DependentUpon>Regist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Family_Tree\飞溅屏.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Family_Tree\飞溅屏.Designer.cs">
+      <DependentUpon>飞溅屏.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Family_Tree\Addbody.resx">
+      <DependentUpon>Addbody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Family_Tree\Affirm.resx">
+      <DependentUpon>Affirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Family_Tree\Change_Image.resx">
+      <DependentUpon>Change_Image.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Family_Tree\body_Manage.resx">
+      <DependentUpon>body_Manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Family_Tree\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Family_Tree\Logout.resx">
+      <DependentUpon>Logout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Family_Tree\Mdfct_Acct_Username.resx">
+      <DependentUpon>Mdfct_Acct_Username.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Family_Tree\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Family_Tree\Modification_Password.resx">
+      <DependentUpon>Modification_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Family_Tree\Regist.resx">
+      <DependentUpon>Regist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Family_Tree\飞溅屏.resx">
+      <DependentUpon>飞溅屏.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Family_Tree\App.config" />
+    <None Include="Family_Tree\ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Family_Tree\Family_Tree.csproj" />
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

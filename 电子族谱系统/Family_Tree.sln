@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Family_Tree", "Family_Tree.csproj", "{F8754CC6-30DB-4BA3-8A98-609F7FE96CAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8754CC6-30DB-4BA3-8A98-609F7FE96CAE}.Debug|x86.ActiveCfg = Debug|x86
+		{F8754CC6-30DB-4BA3-8A98-609F7FE96CAE}.Debug|x86.Build.0 = Debug|x86
+		{F8754CC6-30DB-4BA3-8A98-609F7FE96CAE}.Release|x86.ActiveCfg = Release|x86
+		{F8754CC6-30DB-4BA3-8A98-609F7FE96CAE}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DD7D51F-2A88-4C0F-AB4F-6A65F10E8C28}
+	EndGlobalSection
+EndGlobal
