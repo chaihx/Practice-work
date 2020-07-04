@@ -93,15 +93,15 @@ namespace Contact_Manage
                 String condition = "";
          
                 if (tB_Phone.Text != "")
-                    condition = condition + ",Contact_Phone='" + tB_Phone.Text + "'";
+                    condition = condition + ",出生日期='" + tB_Phone.Text + "'";
  
                 if (tB_QQ.Text != "")
-                    condition = condition + ",Contact_QQ='" + tB_QQ.Text + "'";
+                    condition = condition + ",性别='" + tB_QQ.Text + "'";
   
                 if (tB_Email.Text != "")
-                    condition = condition + ",Contact_Email='" + tB_Email.Text + "'";
+                    condition = condition + ",父亲='" + tB_Email.Text + "'";
 
-                String sqlcom = "update Contact set Contact_Name='" + tB_Name.Text + "'" + condition + " where Contact_ID = '" + modification_ID + "'";
+                String sqlcom = "update Contact set 姓名='" + tB_Name.Text + "'" + condition + " where ID = '" + modification_ID + "'";
 
                 SqlConnection con = new SqlConnection(sqlcon);
                 SqlCommand com = new SqlCommand(sqlcom, con);
@@ -211,6 +211,11 @@ namespace Contact_Manage
         }
 
         private void pctrB_Image_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
